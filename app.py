@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-# Load your dataset
+# Load dataset
 df = pd.read_csv('new_data.csv')
 x = df.drop(['Rented Bike Count'], axis=1)
 y = df['Rented Bike Count'].values
@@ -17,8 +17,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Create a title for your app with a bike icon
-# Create a title for your app
+# Create a title for app
 title_html = "<h1 style='text-align: center;'>&nbsp; Seoul Bike Sharing Demand Prediction🚴</h1>"
 st.markdown(title_html, unsafe_allow_html=True)
 
